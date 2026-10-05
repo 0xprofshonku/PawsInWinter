@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawsInWinter 🐾 Cute Winter Help for Street Dogs</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://tailwindcss.com"></script>
+</head>
+<body class="bg-indigo-50/60 text-slate-700 font-sans tracking-wide">
+
+  <!-- Header / Navigation Navbar -->
+  <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-indigo-100">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2 bg-indigo-50 px-4 py-2 rounded-full border border-indigo-100">
+        <span class="text-2xl animate-bounce">🐶</span>
+        <span class="text-xl font-black text-indigo-600 tracking-tight">PawsInWinter</span>
+      </div>
+      <nav class="hidden md:flex space-x-8 font-bold text-slate-500">
+        <a href="#about" class="hover:text-indigo-600 transition-colors">✨ Our Mission</a>
+        <a href="#donate" class="hover:text-indigo-600 transition-colors">🎁 Gift Necessities</a>
+        <a href="#report" class="hover:text-indigo-600 transition-colors">📍 Report a Pup</a>
+      </nav>
+      <a href="#donate" class="bg-gradient-to-r from-pink-400 to-indigo-500 hover:from-pink-500 hover:to-indigo-600 text-white font-black py-2.5 px-6 rounded-full transition shadow-md hover:shadow-indigo-200 hover:scale-105 transform duration-200">
+        Help Now! 💕
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-indigo-100 via-purple-50 to-indigo-50/60 py-20 px-6 text-center relative overflow-hidden">
+    <!-- Cute Floating Deco Bulbs -->
+    <div class="absolute top-10 left-10 text-4xl opacity-20 animate-pulse">❄️</div>
+    <div class="absolute bottom-10 right-10 text-4xl opacity-20 animate-pulse">❄️</div>
+    
+    <div class="max-w-3xl mx-auto">
+      <span class="bg-indigo-200/70 text-indigo-800 text-xs uppercase font-extrabold px-4 py-1.5 rounded-full tracking-widest border border-indigo-300">
+        ❄️ Cozy Winter Mission 2026 ❄️
+      </span>
+      <h1 class="text-4xl md:text-6xl font-black text-slate-800 mt-6 mb-6 leading-tight">
+        Keep Sweet Street Pups <br>
+        <span class="bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent">Warm &amp; Happy!</span> 🐾
+      </h1>
+      <p class="text-lg text-slate-600 mb-8 max-w-xl mx-auto font-medium">
+        Brrr! The chilly winter winds are here. Our furry little neighborhood friends need warm blankets, hot food, and your loving protection!
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <a href="#donate" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-black text-lg py-4 px-8 rounded-2xl shadow-lg shadow-indigo-200 transition transform hover:-translate-y-1">
+          Sponsor a Cozy Kit 🧥
+        </a>
+        <a href="#report" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-700 font-bold text-lg py-4 px-8 rounded-2xl border-2 border-indigo-100 shadow-sm transition transform hover:-translate-y-1">
+          Spot a Shivering Dog? 🔍
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Counter Dashboard -->
+  <section id="about" class="max-w-5xl mx-auto px-6 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-3xl shadow-sm border border-indigo-50 flex items-center space-x-4">
+        <div class="text-4xl bg-amber-100 p-3 rounded-2xl">📦</div>
+        <div>
+          <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Winter Beds Goal</h3>
+          <p class="text-xl font-black text-slate-800 mt-0.5">500 Jute Sacks</p>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-3xl shadow-sm border border-indigo-50 flex items-center space-x-4">
+        <div class="text-4xl bg-pink-100 p-3 rounded-2xl">🍲</div>
+        <div>
+          <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Yummy Meals</h3>
+          <p class="text-xl font-black text-slate-800 mt-0.5">1,240+ Pups Fed</p>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-3xl shadow-sm border border-indigo-50 flex items-center space-x-4 border-2 border-indigo-200">
+        <div class="text-4xl bg-indigo-100 p-3 rounded-2xl">💖</div>
+        <div>
+          <h3 class="text-xs font-bold text-indigo-400 uppercase tracking-wider">Love Collected</h3>
+          <p id="total-raised-display" class="text-2xl font-black text-indigo-600 mt-0.5">₹45,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation Tier Cards -->
+  <section id="donate" class="bg-white py-16 px-6 rounded-t-[50px] shadow-inner border-t border-indigo-100">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-black text-slate-800">Send a Virtual Warm Hug 🤗</h2>
+        <p class="text-slate-500 font-medium mt-2">Pick a lovely gift tier box below to send physical items right onto the streets!</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Tier 1 -->
+        <div class="bg-gradient-to-b from-amber-50 to-white rounded-3xl p-6 shadow-md border-2 border-amber-100 flex flex-col justify-between hover:scale-[1.02] transition-transform">
+          <div>
+            <div class="text-3xl mb-2">⛺</div>
+            <h3 class="text-lg font-black text-slate-800">Cozy Mattress Bed</h3>
+            <p class="text-amber-600 font-black text-2xl my-2">₹300</p>
+            <p class="text-xs text-slate-500 leading-relaxed">Buys heavy jute bags and clean plastic roofs to create dry, warm sleep corners under benches.</p>
+          </div>
+          <button onclick="simulateDonation(300)" class="mt-6 w-full bg-amber-400 hover:bg-amber-500 text-slate-900 font-extrabold py-3 px-4 rounded-2xl shadow-sm transition">
+            Gift Bed ✨
+          </button>
+        </div>
+
+        <!-- Tier 2 -->
+        <div class="bg-gradient-to-b from-indigo-50 to-white rounded-3xl p-6 shadow-md border-4 border-indigo-300 flex flex-col justify-between relative hover:scale-[1.02] transition-transform">
+          <div class="absolute -top-3.5 right-6 bg-indigo-500 text-white text-xs font-black px-3 py-1 rounded-full shadow-sm">⭐ Super Pup Hero</div>
+          <div>
+            <div class="text-3xl mb-2">🧥</div>
+            <h3 class="text-lg font-black text-slate-800">Warm Jacket + Soup</h3>
+            <p class="text-indigo-600 font-black text-2xl my-2">₹750</p>
+            <p class="text-xs text-slate-500 leading-relaxed">Spares one customized neon coat jacket sweater so drivers see them clearly, plus hot protein food bowls.</p>
+          </div>
+          <button onclick="simulateDonation(750)" class="mt-6 w-full bg-indigo-500 hover:bg-indigo-600 text-white font-extrabold py-3 px-4 rounded-2xl shadow-sm transition">
+            Gift Sweater Combo 🐾
+          </button>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="bg-gradient-to-b from-pink-50 to-white rounded-3xl p-6 shadow-md border-2 border-pink-100 flex flex-col justify-between hover:scale-[1.02] transition-transform">
+          <div>
+            <div class="text-3xl mb-2">🏥</div>
+            <h3 class="text-lg font-black text-slate-800">Emergency Rescue Care</h3>
+            <p class="text-pink-600 font-black text-2xl my-2">₹1,500</p>
+            <p class="text-xs text-slate-500 leading-relaxed">Covers direct first-aid medicine sprays, ear cleaning lotions, and multi-vitamin syrup drips for fragile baby puppies.</p>
+          </div>
+          <button onclick="simulateDonation(1500)" class="mt-6 w-full bg-pink-400 hover:bg-pink-500 text-white font-extrabold py-3 px-4 rounded-2xl shadow-sm transition">
+            Gift Medical Care ❤️
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Crowd-Sourcing / Locality Report Form -->
+  <section id="report" class="max-w-3xl mx-auto px-6 py-16">
+    <div class="bg-white rounded-[35px] p-8 shadow-xl shadow-indigo-100/50 border border-indigo-100">
+      <div class="mb-8 text-center">
+        <span class="text-4xl">🗺️</span>
+        <h2 class="text-2xl font-black text-slate-800 mt-2">Help Us Map the Pups!</h2>
+        <p class="text-slate-500 font-medium text-sm mt-1">Let us know exactly where shivering stray dogs are staying so our volunteer cars can drop off warm mats.</p>
+      </div>
+
+      <form id="dogReportForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+        <!-- Locality Input -->
+        <div>
+          <label class="block text-xs font-black text-slate-400 uppercase tracking-wider mb-2" for="locality">📍 Which street/colony are they at?</label>
+          <input class="w-full px-4 py-3 rounded-2xl border-2 border-slate-100 focus:border-indigo-400 focus:outline-none bg-slate-50 font-medium transition" type="text" id="locality" placeholder="e.g., Near Main Market Gate, Sector 3" required>
+        </div>
+
+        <!-- Number of Dogs -->
+        <div>
+          <label class="block text-xs font-black text-slate-400 uppercase tracking-wider mb-2" for="dogCount">🐕 How many dogs live there roughly?</label>
+          <input class="w-full px-4 py-3 rounded-2xl border-2 border-slate-100 focus:border-indigo-400 focus:outline-none bg-slate-50 font-medium transition" type="number" id="dogCount" min="1" placeholder="e.g., 3 cute doggies" required>
+        </div>
+
+        <!-- Needs Checkboxes -->
+        <div>
+          <label class="block text-xs font-black text-slate-400 uppercase tracking-wider mb-2">🎁 What boxes should the rescue car bring?</label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2">
+            <label class="flex items-center space-x-3 p-3 bg-slate-50 rounded-2xl border border-slate-100 cursor-pointer hover:bg-indigo-50/50 transition">
